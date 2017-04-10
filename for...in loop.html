@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head><title>Loops and Control</title></head>   
+<body>
+    <script>
+        var months = [];
+        months[1] = 'January';
+        months[2] = 'February';
+        months[3] = 'March';
+        months[4] = 'April';
+        months[5] = 'May';
+        months[6] = 'June';
+        months[7] = 'July';
+        months[8] = 'August';
+        months[9] = 'September';
+        months[10] = 'October';
+        months[11] = 'November';
+        months[12] = 'December';
+        var message = "";
+        for (i in months) {
+            message += 'Month ' + i + ' is ' + months[i] + '\n'; \\don't understand why there has to be += there
+        }
+        alert(message);
+    </script>
+</body>
+
+</html>
