@@ -1,0 +1,6 @@
+<ImageView
+    android:src="@drawable/street"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:scaleType="centerCrop" />
+    
