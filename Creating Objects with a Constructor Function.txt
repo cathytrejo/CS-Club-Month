@@ -3,23 +3,20 @@
 <head>
 	<title>Object Oriented Programming</title>
 	<script>
-		function myObejectType() {
-			this.info = 'I am a shiny object.';
-			this.showInfo = function() {
+		function Person (personName) {
+			this.name = personName;
+			this.info = "I am called " = this.name;
+			this.showInfo = function () {
 				alert(this.info);
 			}
-			this.setInfo() {
-				this.info = newInfo;
-			}
 		}
-			var myNewObject1 = new myObejectType();
-			var myNewObject2 = new myObejectType();
+		var person1 = new Person('Adam');
+		var person2 = new Person('Eve');
 	</script>
 </head>
 <body>
-	<input type= "button" value="Show Info 1" onclick="myNewObject1.showInfo()" />
-	<input type= "button" value="Show Info 2" onclick="myNewObject2.showInfo()" />
-	<input type= "button" value="Change info of object2" onclick="myNewObject2.setInfo('New Info!!')" />
+	<input type= "button" value="Show Adam's Info" onclick="person1.showInfo()" />
+	<input type= "button" value="Show Eve's Info" onclick="person2.showInfo()" />
 </body>
 </html>
 	
