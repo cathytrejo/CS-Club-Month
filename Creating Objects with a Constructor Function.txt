@@ -12,10 +12,15 @@
 		}
 		var person1 = new Person('Adam');
 		var person2 = new Person('Eve');
+		Person.prototype.sayHello = function () {
+			alert(this.name + " says hello");
+		}
 	</script>
 </head>
 <body>
 	<input type= "button" value="Show Adam's Info" onclick="person1.showInfo()" />
 	<input type= "button" value="Show Eve's Info" onclick="person2.showInfo()" />
+	<input type= "button" value="Say Hello Adam" onclick="person1.sayHello()" />
+	<input type= "button" value="Say Hello Eve" onclick="person2.sayHello()" />
 </body>
 </html>		
