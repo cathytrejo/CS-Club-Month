@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object Oriented Programming</title>
+	<script>
+		function myObejectType() {
+			this.info = 'I am a shiny object.';
+			this.showInfo = function() {
+				alert(this.info);
+			}
+			this.setInfo() {
+				this.info = newInfo;
+			}
+		}
+			var myNewObject1 = new myObejectType();
+			var myNewObject2 = new myObejectType();
+	</script>
+</head>
+<body>
+	<input type= "button" value="Show Info 1" onclick="myNewObject1.showInfo()" />
+	<input type= "button" value="Show Info 2" onclick="myNewObject2.showInfo()" />
+	<input type= "button" value="Change info of object2" onclick="myNewObject2.setInfo('New Info!!')" />
+</body>
+</html>
+	
+			
