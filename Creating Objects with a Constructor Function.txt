@@ -5,10 +5,10 @@
 	<script>
 		function Person (personName) {
 			this.name = personName;
-			this.info = "I am called " = this.name;
+			this.info = 'I am called ' + this.name;
 			this.showInfo = function () {
 				alert(this.info);
-			}
+			};
 		}
 		var person1 = new Person('Adam');
 		var person2 = new Person('Eve');
@@ -18,6 +18,4 @@
 	<input type= "button" value="Show Adam's Info" onclick="person1.showInfo()" />
 	<input type= "button" value="Show Eve's Info" onclick="person2.showInfo()" />
 </body>
-</html>
-	
-			
+</html>		
