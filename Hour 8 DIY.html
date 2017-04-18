@@ -4,20 +4,32 @@
     <title>Looking into backwards method</title>
     <script>
             function Card () {
+                var suit = "";
+                var face = "";
                     this.suit = "Diamonds";
-                    this.face = "Ace";
-                    this.setSuit (newSuit) {
-                        var newSuit = prompt("What would you like the new suit to be?");
-                        this.suit = newSuit;
+                    this.showSuit = function () {                    //show suit info
                         alert(this.suit);
+                    };
+                    this.face = "Ace";  
+                    this.showFace = function () {                   //show face info
+                        alert(this.face);
+                    };
+                    this.setSuit = function (newSuit) {              //setting new suit
+                        prompt("What would you like the new suit to be?");
+                        this.suit = newSuit;
+                    };
+                    this.showSetSuit = function () {                //showing off that new suit
+                        alert(this.setSuit);
                     }
-                    this.setFace (newFace) {
-                        var newFace = prompt("What would you like the new face to be?");
+                    this.setFace = function (newFace) {               //setting new face
+                        prompt("What would you like the new face to be?");
                         this.face = newFace;
+                    };
+                    this.showSetFace = function () {                 //show new face
+                        alert(this.setFace);
                     }
-                    this.shuffleSuit () {
+                    this.shuffleSuit = function (suit) {
                         Math.random.round(100);
-                        return suit;
                         if (suit <= 25) {
                             document.write("The suit is Diamonds!");
                         } else if (suit <= 50) {
@@ -27,10 +39,12 @@
                         } else {
                             document.write("The suit is Clubs!");
                         }
+                    };
+                    this.showShuffleSuit = function () {            //shows new suit after shuffle
+                        alert(this.shuffleSuit);
                     }
-                    this.shuffleFace () {
+                    this.shuffleFace = function () {
                         Math.random.round(13);
-                        return face;
                         if (face == 0) {
                             document.write("The face is Ace");
                         } else if (face == 1) {
@@ -40,7 +54,7 @@
                         } else if (face == 3) {
                             document.write("The face is 4");
                         } else if (face == 4) {
-                            document.write("The face is 5")
+                            document.write("The face is 5");
                         } else if (face == 5) {
                             document.write("The face is 6");
                         } else if (face == 6) {
@@ -56,18 +70,21 @@
                         } else if (face == 11) {
                             document.write("The face is Queen");
                         } else {
-                            document.write("The face is King")
+                            document.write("The face is King");
                         }
+                    };
+                    this.showShuffleFace = function () {                //shows new shuffled face
+                        alert(this.shuffleFace);
                     }
             }
         </script>
 </head>
 <body>
-    <input type= "button" value="Show suit" onclick="Card.suit()" />
-    <input type= "button" value="Show face" onclick="Card.face()" />
-    <input type= "button" value="Set new suit" onclick="Card.setSuit()" />
-    <input type= "button" value="Set new face" onclick="Card.setFace()" />
-    <input type= "button" value="Shuffle suit" onlcik="Card.shuffleSuit()" />
-    <input type= "button" value="Shuffle face" onclick="Card.shuffleFace()" />
+    <input type= "button" value="Show suit" onclick="Card.showSuit()" />
+    <input type= "button" value="Show face" onclick="Card.showFace()" />
+    <input type= "button" value="Set new suit" onclick="Card.showSetSuit()" />
+    <input type= "button" value="Set new face" onclick="Card.showSetFace()" />
+    <input type= "button" value="Shuffle suit" onlcik="Card.showShuffleSuit()" />
+    <input type= "button" value="Shuffle face" onclick="Card.showShuffleFace()" />
 </body>
 </html>
