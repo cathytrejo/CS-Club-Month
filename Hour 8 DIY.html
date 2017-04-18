@@ -1,11 +1,18 @@
-<script>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Looking into backwards method</title>
+    <script>
             function Card () {
                     this.suit = "Diamonds";
                     this.face = "Ace";
                     this.setSuit (newSuit) {
+                        var newSuit = prompt("What would you like the new suit to be?");
                         this.suit = newSuit;
+                        alert(this.suit);
                     }
                     this.setFace (newFace) {
+                        var newFace = prompt("What would you like the new face to be?");
                         this.face = newFace;
                     }
                     this.shuffleSuit () {
@@ -51,5 +58,16 @@
                         } else {
                             document.write("The face is King")
                         }
+                    }
             }
         </script>
+</head>
+<body>
+    <input type= "button" value="Show suit" onclick="Card.suit()" />
+    <input type= "button" value="Show face" onclick="Card.face()" />
+    <input type= "button" value="Set new suit" onclick="Card.setSuit()" />
+    <input type= "button" value="Set new face" onclick="Card.setFace()" />
+    <input type= "button" value="Shuffle suit" onlcik="Card.shuffleSuit()" />
+    <input type= "button" value="Shuffle face" onclick="Card.shuffleFace()" />
+</body>
+</html>
