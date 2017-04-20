@@ -4,52 +4,13 @@
     <title>Breaking it into Pieces</title>
 </head>
 <script>
-                  this.showShuffleSuit = function () {            //shows new suit after shuffle
-                        alert(this.shuffleSuit);
-                    }
-                    this.shuffleFace = function (face) {
-                        Math.random.round(13);
-                        if (face == 0) {
-                            document.write("The face is Ace");
-                        } else if (face == 1) {
-                            document.write("The face is 2");
-                        } else if (face == 2) {
-                            document.write("The face is 3");
-                        } else if (face == 3) {
-                            document.write("The face is 4");
-                        } else if (face == 4) {
-                            document.write("The face is 5");
-                        } else if (face == 5) {
-                            document.write("The face is 6");
-                        } else if (face == 6) {
-                            document.write("The face is 7");
-                        } else if (face == 7) {
-                            document.write("The face is 8");
-                        } else if (face == 8) {
-                            document.write("The face is 9");
-                        } else if (face == 9) {
-                            document.write("The face is 10");
-                        } else if (face == 10) {
-                            document.write("The face is Jack");
-                        } else if (face == 11) {
-                            document.write("The face is Queen");
-                        } else {
-                            document.write("The face is King");
-                        }
-                    };
-                    this.showShuffleFace = function () {                //shows new shuffled face
-                        alert(this.shuffleFace);
-                    }
-            }
-        </script>
+                  var suit = ["Hearts", "Clubs", "Spades", "Diamonds"];
+ var face = ["A", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
 
-<body>
-    <input type= "button" value="Show suit" onclick="Card.showSuit()" />
-    <input type= "button" value="Show face" onclick="Card.showFace()" />
-    <input type= "button" value="Set new suit" onclick="Card.showSetSuit()" />
-    <input type= "button" value="Set new face" onclick="Card.showSetFace()" />
-    <input type= "button" value="Shuffle suit" onlcik="Card.showShuffleSuit()" />
-    <input type= "button" value="Shuffle face" onclick="Card.showShuffleFace()" />
+function Card ( suit, face) {
+    this.suit = suit;
+    this.face = face;
+    this.
 </body>
 </html>
 
