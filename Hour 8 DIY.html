@@ -1,26 +1,24 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
  <html>
  <head>
     <title>Breaking it into Pieces</title>
 </head>
-<body>
 <script>
-         function Card (Suit, Face) {
-                    this.suit = Suit;
-                    this.face = Face; 
-                    this.showSuit = function () {                    //show suit info
-                        alert(this.suit);
-                    };
-                    this.showFace = function () {                   //show face info
-                        alert(this.face);
-                    };
-        }
-        var card1 = new Card("Diamonds", "King");
-        var card2 = new Card("Clubs", "Ace");
-</script>
-    <input type= "button" value="Show Card 1 suit" onclick="card1.showSuit()" />
-    <input type= "button" value="Show Card 1 face" onclick="card1.showFace()" />
-    <input type= "button" value="Show Card 2 suit" onclick="card2.showSuit()" />
-    <input type= "button" value="Show Card 2 face" onclick="card2.showFace()" />
+                var suit = ["Hearts", "Clubs", "Spades", "Diamonds"];
+var face = ["A", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+
+function Card ( suit, face) {
+    this.suit = suit;
+    this.face = face;
+    this.shuffleSuit = function (min, max) {
+       return var shuffleSuit = Math.floor(Math.random () * (13) + 1); //I want to have the numbre that is returned to be used in "if" loop
+       if (number === 1) {
+           alert("HEARTS");
+       } else {
+           alert("Nothing");
+       }
+    }
+}
 </body>
 </html>
+
