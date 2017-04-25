@@ -1,0 +1,8 @@
+#intro {    <!--the pound is used for id-->
+    color: #B83C3A;
+}
+
+.standout {                <!--the period is used for class in html-->
+    color: #F7AC5F;
+    font-family: Verdana;
+}
