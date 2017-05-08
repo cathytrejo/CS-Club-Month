@@ -1,0 +1,41 @@
+/*Global*/
+*{ 
+ border: 1px black solid;
+}
+
+.container {
+	color: #e8491d;
+	float: left;
+	clear: right;
+}
+
+/*Header*/
+header {
+	background-color: #efc2e7;
+	padding-top: 30px;
+	padding-bottom:10px;
+	padding-left: 10px;
+	margin: 0;
+	border-bottom: 5px #4286f4 solid;
+}
+
+/*Article*/
+article p {
+	margin: 0px;
+	padding: 0px;
+	font-family: Helvetica, sans-serif;
+	font-size: 15px;
+	float: left;
+	clear: right;
+	width: 75%;
+	overflow: auto;
+}
+
+/*Aside*/
+.rem img {
+	width: 20%;
+	float: right;
+	clear: left;
+}
+	
+	
