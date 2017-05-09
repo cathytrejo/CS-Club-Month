@@ -1,0 +1,19 @@
+/*Header*/
+header {
+	background: #35424a;
+	color: #ffffff;
+	padding-top: 20px;
+	min-height: 70px;
+	margin: 0;
+	border-bottom: 5px #ffffff solid;
+}
+
+header #main_logo {
+	float: left;
+	border-bottom: 5px #4286f4 solid;
+	padding-left: 20px;
+}
+
+header #main_logo h1 {
+	margin: 0;
+}
