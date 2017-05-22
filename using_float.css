@@ -1,34 +1,59 @@
 /*Global*/
-*{ 
- border: 1px black solid;
+* {
+	border: 1px black solid;
+	margin: 0;
+	padding: 0;
+
+}
+
+body {
+	background-color: #efefef;
+	font: 15px/1.5 Garamond, Arial, sans-serif;
+	margin: 0;  /*this is what controls the background to bleed to edges*/
+	padding: 0;
+	
 }
 
 .container {
-	color: #e8491d;
-	float: left;
-	clear: right;
+	width: 80%; 
+	overflow:hidden;
+	
 }
 
 /*Header*/
 header {
-	background-color: #efc2e7;
-	padding-top: 30px;
-	padding-bottom:10px;
-	padding-left: 10px;
+	background: #35424a;
+	color: #ffffff;
+	padding-top: 20px;
+	min-height: 70px;
 	margin: 0;
-	border-bottom: 5px #4286f4 solid;
+	border-bottom: 5px #ffffff solid;
 }
+
+header #main_logo {
+	float: left;
+	border-bottom: 5px #4286f4 solid;
+	/*padding-left: 20px;*/
+}
+
+header #main_logo h1 {
+	margin: 0;
+}
+
+nav {
+	text-decoration: none;
+}
+
 
 /*Article*/
 article p {
 	margin: 0px;
-	padding: 0px;
+	/*padding: 15px 10px 0 5px;*/
 	font-family: Helvetica, sans-serif;
 	font-size: 15px;
 	float: left;
-	clear: right;
 	width: 75%;
-	overflow: auto;
+	overflow: hidden;
 }
 
 /*Aside*/
